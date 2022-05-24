@@ -1,0 +1,5 @@
+A slider that changes an image to show the girl bumping in the wardrobe
+A secret area on website that requires password (possession knows it)
+A home view where you can see the different rooms you can go to
+A simple task to do in each room that involves clicking
+Under the floorboards is only available on unpossessed (shows up if you have the little boy's mirror)
