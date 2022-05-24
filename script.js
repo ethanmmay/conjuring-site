@@ -26,7 +26,6 @@ function updateBump() {
     console.log("updated bump range - " + value)
     // when value changes, change classlist of girl to move away or towards wardrobe
     
-    
     if (changedBefore) {
         let marginLeftNewClass = "margin-left-" + value*20
         document.getElementById("wardrobeGirl").classList.replace(marginLeftClass, marginLeftNewClass)
@@ -39,4 +38,9 @@ function updateBump() {
         changedBefore = true
     }
     
+}
+
+function acquireMusicBox() {
+    document.getElementById("hint").classList.remove("hidden")
+    document.getElementById("img").classList.add("hidden")
 }
