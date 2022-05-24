@@ -11,14 +11,14 @@
 </head>
 <body>
     <div class="container-fluid" >
-        <div class="d-flex flex-column">
         <h1>Bedroom</h1>
-        <div id="img2">
+        <div>
             <form>
                 <label for="wardrobeBump">Run into Wardrobe</label>
-                <input type="range" id="wardrobeBump" name="wardrobeBump" min="0" max="5">
+                <input type="range" id="wardrobeBump" name="wardrobeBump" min="0" max="5" onchange="updateBump()" value="0">
               </form>
-        </div>
+            <div id="wardrobeGirl" class="wardrobeGirl margin-left-0"></div>
+            <img src="src/wardrobe.jpg" alt="Wardrobe Image" class="wardrobeImage position-absolute margin-left-150">
         </div>
     </div>
 </body>

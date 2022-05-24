@@ -1,4 +1,5 @@
 let possessed = false
+let changedBefore = false
 
 function togglePossess() {
     if (possessed) { 
@@ -18,4 +19,24 @@ function togglePossess() {
 
 function hide() {
     window.alert("You are hiding in the walls behind the wardrobe")
+}
+
+function updateBump() {
+    value = document.getElementById("wardrobeBump").value
+    console.log("updated bump range - " + value)
+    // when value changes, change classlist of girl to move away or towards wardrobe
+    
+    
+    if (changedBefore) {
+        let marginLeftNewClass = "margin-left-" + value*20
+        document.getElementById("wardrobeGirl").classList.replace(marginLeftClass, marginLeftNewClass)
+        marginLeftClass = marginLeftNewClass
+        //console.log(document.getElementById("wardrobeGirl").classList.toString())
+    } else {
+        marginLeftClass = "margin-left-" + value*20
+        //console.log(marginLeftClass)
+        document.getElementById("wardrobeGirl").classList.replace("margin-left-0", marginLeftClass)
+        changedBefore = true
+    }
+    
 }
