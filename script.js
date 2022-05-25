@@ -27,12 +27,12 @@ function updateBump() {
     // when value changes, change classlist of girl to move away or towards wardrobe
     
     if (changedBefore) {
-        let marginLeftNewClass = "margin-left-" + value*20
+        let marginLeftNewClass = "margin-left-" + value
         document.getElementById("wardrobeGirl").classList.replace(marginLeftClass, marginLeftNewClass)
         marginLeftClass = marginLeftNewClass
         //console.log(document.getElementById("wardrobeGirl").classList.toString())
     } else {
-        marginLeftClass = "margin-left-" + value*20
+        marginLeftClass = "margin-left-" + value
         //console.log(marginLeftClass)
         document.getElementById("wardrobeGirl").classList.replace("margin-left-0", marginLeftClass)
         changedBefore = true

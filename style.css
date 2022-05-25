@@ -1,5 +1,5 @@
 .container-fluid {
-    height: 979px;
+    height: 100vh;
     vertical-align: middle;
     background-color: rgb(77, 77, 77) !important;
     color: white;
@@ -13,41 +13,46 @@
     display: none !important;
 }
 
+.homePic {
+    max-width: 600px;
+    max-height: 400px;
+}
+
+.banner {
+    max-width: 600px;
+}
+
 .wardrobeGirl {
-    width: 50px;
-    height: 100px;
+    width: 100px;
+    height: 150px;
     background-color: aqua;
-    margin-left: 00px;
+    margin-left: 0px;
+    margin-top: 30px;
 }
 
 .wardrobeImage {
-    width: 75px;
-    height: 100px;
+    width: 150px;
+    height: 200px;
 }
 
-.margin-left-20 {
-    margin-left: 20px;
+.margin-left-1 {
+    margin-left: 16px;
 }
 
-.margin-left-40 {
-    margin-left: 40px;
+.margin-left-2 {
+    margin-left: 32px;
 }
 
-.margin-left-60 {
-    margin-left: 60px;
+.margin-left-3 {
+    margin-left: 48px;
 }
 
-.margin-left-80 {
+.margin-left-4 {
+    margin-left: 64px;
+}
+
+.margin-left-5 {
     margin-left: 80px;
-}
-
-.margin-left-100 {
-    margin-left: 100px;
-}
-
-.margin-left-150 {
-    margin-left: 150px;
-    margin-top: -100px;
 }
 
 .text-lime {
@@ -57,4 +62,12 @@
 .nav-item {
     color: aqua;
     justify-content: end;
+}
+
+.w-custom1 {
+    width: 332px;
+}
+
+.hoverHand {
+    cursor: pointer;
 }
