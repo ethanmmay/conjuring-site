@@ -8,11 +8,15 @@ function togglePossess() {
         // Unpossess
         document.getElementById("img").classList.remove("hidden")
         document.getElementById("img2").classList.add("hidden")
+        document.getElementById("possess-button").classList.remove("hidden")
+        document.getElementById("unpossess-button").classList.add("hidden")
         possessed = false
     } else if (!possessed) {
         // Possess
         document.getElementById("img2").classList.remove("hidden")
         document.getElementById("img").classList.add("hidden")
+        document.getElementById("possess-button").classList.add("hidden")
+        document.getElementById("unpossess-button").classList.remove("hidden")
         possessed = true
     } else {
         window.alert("An error with possession occurred.")
@@ -20,6 +24,8 @@ function togglePossess() {
 }
 
 function hide() {
+    document.getElementById("weightForm").classList.remove("hidden")
+    document.getElementById("img").classList.add("hidden")
     window.alert("You are hiding in the walls behind the wardrobe")
 }
 
@@ -64,4 +70,24 @@ function possessCrow() {
     oldLeftMargin = leftMargin
     crowCounter++
     document.getElementById("crowCounter").innerText = crowCounter
+}
+
+function piano(val) {
+    if (val == 2) {
+        window.alert("The piano is playing by itself! OOooohh! So spooky!")
+    } else {
+        window.alert("It's just a piano")
+    }
+}
+
+function fall() {
+    weight = document.getElementById("weightFormInput").value
+    console.log(weight)
+    document.getElementById("weightForm").classList.add("hidden")
+    if (weight > 100) {
+        //Fall through
+        document.getElementById("fallText").classList.remove("hidden")
+    } else {
+        document.getElementById("fineText").classList.remove("hidden")
+    }
 }

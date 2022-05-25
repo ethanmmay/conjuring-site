@@ -10,19 +10,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
-    <title>Outside</title>
+    <title>Bedroom 1</title>
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid" >
         <a href="index.html" class="nav-item">Back to Home</a>
-        <div>
-            <h1>Outside</h1>
-            <h6>Possess the crows!</h6>
-            <h6>Crows Possessed: <span id="crowCounter">0</span></h6>
+        <h1>Bedroom</h1>
+        <div class="d-flex flex-row">
+            <form>
+                <label for="wardrobeBump">Run into Wardrobe</label><br>
+                <input type="range" id="wardrobeBump" name="wardrobeBump" min="0" max="5" onchange="updateBump()" value="0">
+            </form>
         </div>
-        <div id="crowSpace" class="crowSpace bg-warning">
-            <div>
-                <img src="src/crow.png" id="crow" alt="Crow" class="crow hoverHand margin-top-0 margin-left-0" onclick="possessCrow()">
+        <div class="d-flex flex-row justify-content-between w-custom1">
+            <div class="flex-md-column">
+                <img src="src/cindy.PNG" alt="Cindy Image" id="wardrobeGirl" class="wardrobeGirl margin-left-0">    
+            </div>
+            <div class="flex-md-column">
+                <img src="src/wardrobe.png" alt="Wardrobe Image" class="wardrobeImage">
             </div>
         </div>
     </div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <title>Bedroom 1</title>
+</head>
+<body>
+    <div class="container-fluid" >
+        <a href="index.html" class="nav-item">Back to Home</a>
+        <div class="d-flex flex-column">
+        <h1>Bedroom</h1>
+        <img src="src/wardrobe.png" alt="Wardrobe Image" id="img" class="wardrobeImage hoverHand" onclick="hide()">
+        <div id="weightForm" class="hidden">
+        <form>
+            <label for="weightForm">How much do you weigh?</label>
+            <input type="number" name="weightForm" id="weightFormInput">
+            <input type="button" value="Submit" id="weightFormButton" onclick="fall()">
+        </form>
+        </div>
+        <div id="fallText" class="hidden">
+            <h6 class="text-danger">Suddenly the boards beneath your feet snap and you slide down between the walls, all the way down below the basement into a shady room.</h6>
+            <div class="roomButton">
+                <a href="bedroom-g.html" class="linkText">Bedroom</a>
+            </div>
+        </div>
+        <div id="fineText" class="hidden">
+            <h6 class="text-lime">You hear the boards creak as you scurry between the walls, looking for an even better place to hide.</h6>
+            <div class="roomButton">
+                <a href="bedroom-g.html" class="linkText">Bedroom</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
