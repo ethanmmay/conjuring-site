@@ -13,9 +13,14 @@
     <div class="container-fluid">
         <a href="index.html" class="nav-item">Back to Home</a>
         <div>
-        <h1>Outside</h1><br>
-        <img src="src/musicbox.png" alt="Music Box" id="img" onclick="acquireMusicBox()" class="musicBox hoverHand">
-        <div id="hint" class="text-lime hidden">Rory tells you there's a hiding spot behind the bottom left panel of the wardrobe upstairs. You can hide in there!</div>
+            <h1>Outside</h1>
+            <h6>Possess the crows!</h6>
+            <h6>Crows Possessed: <span id="crowCounter">0</span></h6>
+        </div>
+        <div id="crowSpace" class="crowSpace bg-warning">
+            <div>
+                <img src="src/crow.png" id="crow" alt="Crow" class="crow margin-top-0 margin-left-0" onclick="possessCrow()">
+            </div>
         </div>
     </div>
 </body>
