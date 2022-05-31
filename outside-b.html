@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&display=swap" rel="stylesheet">
+    <title>Outside</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <a href="index.html" class="nav-item">Back to Home</a>
+        <div>
+            <h1>Outside</h1>
+            <h6>Possess the crows!</h6>
+            <h6>Crows Possessed: <span id="crowCounter">0</span></h6>
+        </div>
+        <div id="crowSpace" class="crowSpace bg-warning">
+            <div>
+                <img src="src/crow.png" id="crow" alt="Crow" class="crow hoverHand margin-top-0 margin-left-0" onclick="possessCrow()">
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
