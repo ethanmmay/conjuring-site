@@ -1,0 +1,41 @@
+Hi! My name is Ethan May and in this short video I'll be showing off a project that explores what I've learned about the testing platform Selenium.
+
+I'll be testing a website that I created for this project so it's a little more interesting than just testing a random website.
+
+You can visit this site yourself by just typing in "ethanmmay.github.io/conjuring-site". The site is based on the 2013 horror movie The Conjuring, but there aren't any jumpscares so don't worry about that at all. Or are there? No, i'm just kidding.
+
+So here we'll see a few buttons we can click on that will take us to other pages that show off some of the features that Selenium has to offer. We can also change where we end up depending on whether you click the Possess button first.
+
+So to kick this off we'll start by going to the Bedroom without clicking the button.
+
+Here's just a simple wardrobe like the one in the movie. If we click on it, we get an alert we can accept and then a form we can enter or "weight" into. And this part is to show off that Selenium will be able to interact with forms, images with onclick functions and even with alerts.
+
+On this particular form, if you enter a weight above 100, the text that appears will be different. So here the boards snap, but if you put under 100 then they don't. This will be something that we can automate the testing of with our program.
+
+Going back to home now, we're going to check out the Basement while possessed.
+
+Here is an awkwardly photoshopped staircase that leads down to a piano, and this feature will just show off that Selenium can scroll up and down the page.
+
+Next is the Outside while Possessed. Here we have a little crow minigame where it moves around after clicking it. This page helps show that Selenium finds elements on a page using locators instead of the space created on the page. This lets it find the crow no matter where it moves.
+
+And finally we have our Bedroom while possessed. Here we see Cindy from the movie and the wardrobe. In the movie she starts sleepwalking and bumping into the wardrobe so we can show that happening here and we can also show how Selenium has the ability to Drag and Drop elements on the screen like this range input.
+
+Now that we've looked through the website, we can run our tests to do everything we just did, but much faster.
+
+Starting with the Bedroom on Unpossessed, it goes through and inputs two different weights to get both results before it closes out.
+
+In the Basement while Possessed, the test immediately scrolls to the piano and clicks on it for the alert.
+
+With Outside on Possessed, it can play this crow game extremely fast.
+
+And finally in the Bedroom while possessed, our test can make poor Cindy bump her head a few times.
+
+So that's it for the tests. While these are run in Chrome, it's simple to port them over into a driver for Internet Explorer, FireFox or other browsers. Now, I would like to mention some of the things I learned while creating this project.
+
+These tests were built using the Page Object Model design pattern where you use your StepDefinitions to reference PageObjects where the test steps are built out based on which page the program is on.
+
+Tests could also be created using Builders which record your movements on a site to make a test for it.
+
+Page factories are used for large scale websites with many PageObjects that the Factories initialize and instantiate to serve the needs of the tests. Factories also use a different method for finding elements on a page, the @FindBy annotation
+
+Dependency injection is a design pattern that injects necessary dependencies and Objects as needed. That way you can focus on high-level abstractions more and create a pattern of Dependency inversion where you can save 
